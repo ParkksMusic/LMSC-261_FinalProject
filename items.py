@@ -38,9 +38,9 @@ class Consumable:
         return "{} (+{} HP)".format(self.name, self.healing_value)
 
 
-class CrustyBread(Consumable):
+class CookedMeat(Consumable):
     def __init__(self):
-        self.name = "Crusty Bread"
+        self.name = "CookedMeat"
         self.healing_value = 10
         self.value = 12
 
