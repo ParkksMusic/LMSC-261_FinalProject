@@ -14,8 +14,8 @@ class Trader(NonPlayableCharacter):
         self.name = "Trader"
         self.gold = 100
         self.inventory = [items.CrustyBread(),
-                      items.CrustyBread(),
-                      items.CrustyBread(),
+                      items.CookedMeat(),
+                      items.CookedMeat(),
                       items.HealingPotion(),
                       items.HealingPotion()]
                       items.RustySword
