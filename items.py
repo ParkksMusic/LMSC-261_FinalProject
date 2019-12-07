@@ -17,8 +17,7 @@ class Rock(Weapon):
 class Dagger(Weapon):
     def __init__(self):
         self.name = "Dagger"
-        self.description = "A small dagger with some rust. " \
-                           "Somewhat more dangerous than a rock."
+        self.description = "An easily concealed blade. They will never see it coming."
         self.damage = 10
         self.value = 20
 
@@ -26,8 +25,7 @@ class Dagger(Weapon):
 class RustySword(Weapon):
     def __init__(self):
         self.name = "Rusty sword"
-        self.description = "This sword is showing its age, " \
-                           "but still has some fight in it."
+        self.description = "Your mother told you not to leave your sword out in the rain...You didn't listen"
         self.damage = 20
         self.value = 100
 
