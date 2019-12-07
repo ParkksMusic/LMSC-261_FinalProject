@@ -18,3 +18,4 @@ class Trader(NonPlayableCharacter):
                       items.CrustyBread(),
                       items.HealingPotion(),
                       items.HealingPotion()]
+                      items.RustySword
