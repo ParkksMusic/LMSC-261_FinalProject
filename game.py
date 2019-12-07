@@ -46,19 +46,19 @@ def play():
         if player.is_alive() and not player.victory:
             choose_action(room, player)
         elif not player.is_alive():
-            print("Your journey has come to an early end!")
+            print("The frozen road has consumed another traveler")
 
 
 def choose_action(room, player):
     action = None
     while not action:
         available_actions = get_available_actions(room, player)
-        action_input = input("Action: ")
+        action_input = input("What would you like to do?: ")
         action = available_actions.get(action_input)
         if action:
             action()
         else:
-            print("Invalid action!")
+            print("No...You can't do that")
 
 
 def get_available_actions(room, player):
