@@ -92,7 +92,7 @@ class FindGoldTile(MapTile):
             """
         else:
             return """
-            Someone dropped some gold. You pick it up.
+            You find some bloody coins lying on the cold ground. You take them. That would be a waist of good gold.
             """
 
 
@@ -103,15 +103,23 @@ class TraderTile(MapTile):
 
     def check_if_trade(self, player):
         while True:
+            print("You approach a fire with a lovely smell coming from the direction"
+            time.sleep(2)
+            print("You see a creature sitting next to the fire eating some rather good looking meat")
+            time.sleep(2)
+            print("'Ah another traveler. The spiders didn't get you though. Guess I still have to find dinner')
+            time.sleep(2)
+            print("'Want to see what the old fool had on him?'")
+            time.sleep(2)
             print("Would you like to (B)uy, (S)ell, or (Q)uit?")
-            user_input = input()
-            if user_input in ['Q', 'q']:
+            user_input = input().upper()
+            if user_input in ['Q']:
                 return
-            elif user_input in ['B', 'b']:
-                print("Here's whats available to buy: ")
+            elif user_input in ['B']:
+                print("Here is what the pour guy had on him.: ")
                 self.trade(buyer=player, seller=self.trader)
-            elif user_input in ['S', 's']:
-                print("Here's whats available to sell: ")
+            elif user_input in ['S']:
+                print("'You wish to sell to me?': ")
                 self.trade(buyer=self.trader, seller=player)
             else:
                 print("Invalid choice!")
