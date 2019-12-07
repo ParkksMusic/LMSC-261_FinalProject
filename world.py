@@ -103,14 +103,6 @@ class TraderTile(MapTile):
 
     def check_if_trade(self, player):
         while True:
-            print("You approach a fire with a lovely smell coming from the direction"
-            time.sleep(2)
-            print("You see a creature sitting next to the fire eating some rather good looking meat")
-            time.sleep(2)
-            print("'Ah another traveler. The spiders didn't get you though. Guess I still have to find dinner')
-            time.sleep(2)
-            print("'Want to see what the old fool had on him?'")
-            time.sleep(2)
             print("Would you like to (B)uy, (S)ell, or (Q)uit?")
             user_input = input().upper()
             if user_input in ['Q']:
@@ -152,8 +144,39 @@ class TraderTile(MapTile):
     def intro_text(self):
         return """
         A frail not-quite-human, not-quite-creature squats in the corner
-        clinking his gold coins together. He looks willing to trade.
         """
+        #    print("You approach a fire with a lovely smell coming from the direction"
+        #    time.sleep(2)
+        #    print("You see a creature sitting next to the fire eating some rather good looking meat")
+        #    time.sleep(2)
+        #   print("'Ah another traveler. The spiders didn't get you though. Guess I still have to find dinner')
+        #    time.sleep(2)
+        #    print("'Want to see what the old fool had on him?'")
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        #     time.sleep(2)
+
+        
 
 world_dsl = """
 |EN|EN|VT|EN|EN|
