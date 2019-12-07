@@ -1,10 +1,42 @@
 from collections import OrderedDict
 from player import Player
 import world
-
+import time
 
 def play():
-    print("Escape from Cave Terror!")
+    print("                         Welcome to The Frozen Road")
+    time.sleep(1)
+    print("                                                                        ")   
+    time.sleep(1)
+    print("                                     |                                  ")
+    time.sleep(1)
+    print("                                 _  _|_  _                              ")
+    time.sleep(1)
+    print("                                |;|_|;|_|;|                             ")
+    time.sleep(1)
+    print("                                \\.    .  /                             ")
+    time.sleep(1)
+    print("                                 \\:  .  /                              ")
+    time.sleep(1)
+    print("                                  ||:   |                               ")
+    time.sleep(1)
+    print("                                  ||:.  |                               ")
+    time.sleep(1)
+    print("                                  ||:  .|                               ")
+    time.sleep(1)
+    print("                                  ||:   |       \,/                     ")
+    time.sleep(1)
+    print("                                  ||: , |            /`\                ")
+    time.sleep(1)
+    print("                                  ||:   |
+    time.sleep(1)
+    print("                                  ||: . |                               ")
+    time.sleep(1)
+    print("     __                          _||_   |                               ")
+    time.sleep(1)
+    print("  `~    '--~~__            __ ----~    ~`---,              ___          ")
+    time.sleep(1)
+    print("               ~---__ ,--~'                  ~~----_____-~'   `~----~~\n")
     world.parse_world_dsl()
     player = Player()
     while player.is_alive() and not player.victory:
