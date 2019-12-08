@@ -26,9 +26,9 @@ def play():
     time.sleep(1)
     print("                                  ||:   |       \,/                     ")
     time.sleep(1)
-    print("                                  ||: , |            /`\                ")
+    print("                                  ||: , |           /`\                ")
     time.sleep(1)
-    print("                                  ||:   |
+    print("                                  ||:   |                               ")
     time.sleep(1)
     print("                                  ||: . |                               ")
     time.sleep(1)
