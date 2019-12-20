@@ -18,10 +18,7 @@ class MapTile:
 class StartTile(MapTile):
     def intro_text(self):
         return """
-You're a traveler, Heading down this fozen road you find a cave. Might be what you need to survive the night.
-Walking into the cave you find a small trapdoor on the ground that has been proped open by a stick. Your curiosity takes the better of you and you decend into the pit.
-As you're climbing down this wooden latter you hear a snap and you fall to the floor.
-Better find another way out.
+Find a way out.
         """
 
 
@@ -110,7 +107,7 @@ class TraderTile(MapTile):
             if user_input in ['Q']:
                 return
             elif user_input in ['B']:
-                print("Here is what the pour guy had on him.: ")
+                print("He looks eger to show you what he has found.")
                 self.trade(buyer=player, seller=self.trader)
             elif user_input in ['S']:
                 print("'You wish to sell to me?': ")

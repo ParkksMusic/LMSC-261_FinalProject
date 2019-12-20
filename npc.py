@@ -16,5 +16,6 @@ class Trader(NonPlayableCharacter):
         self.inventory = [items.CookedMeat(),
                       items.CookedMeat(),
                       items.CookedMeat(),
+                      items.RustySword(),
                       items.HealingPotion(),
                       items.HealingPotion()]

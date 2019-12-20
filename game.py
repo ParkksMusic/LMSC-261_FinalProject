@@ -4,7 +4,7 @@ import world
 import time
 
 def play():
-    
+    print("                                                                        ")
     print("                         Welcome to The Frozen Road")
     print("                                                                        ")   
     time.sleep(0.5)
@@ -38,6 +38,13 @@ def play():
     time.sleep(0.5)
     print("               ~---__ ,--~'                  ~~----_____-~'   `~----~~\n")
     time.sleep(3)
+    print("You're a traveler, Heading down this fozen road you find a cave. Might be what you need to survive the night.")
+    time.sleep(1)
+    print("Walking into the cave you find a small trapdoor on the ground that has been proped open by a stick. Your curiosity takes the better of you and you decend into the pit.")
+    time.sleep(1)
+    print("As you're climbing down this wooden latter you hear a snap and you fall to the floor.")
+    time.sleep(2)
+
     
     world.parse_world_dsl()
     player = Player()
@@ -48,7 +55,8 @@ def play():
         if player.is_alive() and not player.victory:
             choose_action(room, player)
         elif not player.is_alive():
-            print("The frozen road has consumed another traveler")
+            
+            print("\n\nThe frozen road has consumed another traveler")
             time.sleep(0.5)
             print("                __)(__                       ")
             time.sleep(.05)
