@@ -18,8 +18,10 @@ class MapTile:
 class StartTile(MapTile):
     def intro_text(self):
         return """
-        You find yourself in a cave with a flickering torch on the wall.
-        You can make out four paths, each equally as dark and foreboding.
+You're a traveler, Heading down this fozen road you find a cave. Might be what you need to survive the night.
+Walking into the cave you find a small trapdoor on the ground that has been proped open by a stick. Your curiosity takes the better of you and you decend into the pit.
+As you're climbing down this wooden latter you hear a snap and you fall to the floor.
+Better find another way out.
         """
 
 
@@ -39,7 +41,7 @@ class EnemyTile(MapTile):
         elif r < 0.95:
             self.enemy = enemies.BatColony()
             self.alive_text = "You hear a squeaking noise growing louder" \
-                              "...suddenly you are lost in s swarm of bats!"
+             "...suddenly you are lost in s swarm of bats!"
             self.dead_text = "Dozens of dead bats are scattered on the ground."
         else:
             self.enemy = enemies.RockMonster()
@@ -67,9 +69,9 @@ class VictoryTile(MapTile):
 
     def intro_text(self):
         return """
-        You see a bright light in the distance...
-        ... it grows as you get closer! It's sunlight!
-        Victory is yours!
+You see a bright light in the distance...
+... it grows as you get closer! It's sunlight!
+You Survive another day, lucky you.
         """
 
 
@@ -88,11 +90,11 @@ class FindGoldTile(MapTile):
     def intro_text(self):
         if self.gold_claimed:
             return """
-            Another unremarkable part of the cave. You must forge onwards.
+Another unremarkable part of the cave. You must forge onwards.
             """
         else:
             return """
-            You find some bloody coins lying on the cold ground. You take them. That would be a waist of good gold.
+You find some bloody coins lying on the cold ground. You take them. That would be a waist of good gold.
             """
 
 
@@ -143,7 +145,9 @@ class TraderTile(MapTile):
 
     def intro_text(self):
         return """
-        A frail not-quite-human, not-quite-creature squats in the corner
+        A frail not-quite-human, not-quite-creature squats in the corner. You approach a fire with a lovely smell coming from the direction.
+        You see a creature sitting next to the fire eating some rather good looking meat. 'Ah another traveler. The spiders didn't get you though. 
+        Guess I still have to find dinner. Want to see what the old fool had on him?'
         """
         #    print("You approach a fire with a lovely smell coming from the direction"
         #    time.sleep(2)
@@ -152,29 +156,7 @@ class TraderTile(MapTile):
         #   print("'Ah another traveler. The spiders didn't get you though. Guess I still have to find dinner')
         #    time.sleep(2)
         #    print("'Want to see what the old fool had on him?'")
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        #     time.sleep(2)
+        #    time.sleep(2)
 
         
 
